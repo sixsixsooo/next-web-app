@@ -40,3 +40,81 @@ a {
     color-scheme: dark;
   }
 }
+
+footer {
+  width: 100%;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-top: 1px solid;
+  border-color: rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: var(--foreground);
+  background-color: var(--background);
+  position: relative;
+}
+
+footer::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 80%;
+  margin: 0 auto 1rem auto;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--foreground),
+    transparent
+  );
+  opacity: 0.2;
+}
+
+@media (prefers-color-scheme: dark) {
+  footer {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  footer::before {
+    background: linear-gradient(
+      90deg,
+      transparent,
+      var(--foreground),
+      transparent
+    );
+  }
+}
+
+header {
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: var(--background);
+  color: var(--foreground);
+  border-bottom: 1px solid rgba(250, 250, 250, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+header a:hover {
+  background-color: rgba(218, 213, 213, 0.05);
+}
+
+@media (prefers-color-scheme: dark) {
+  header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  header a:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+}
