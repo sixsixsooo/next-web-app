@@ -5,7 +5,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #000000;
     --foreground: #ededed;
   }
 }
@@ -60,12 +60,10 @@ footer::before {
   height: 1px;
   width: 80%;
   margin: 0 auto 1rem auto;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    var(--foreground),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      var(--foreground),
+      transparent);
   opacity: 0.2;
 }
 
@@ -75,12 +73,10 @@ footer::before {
   }
 
   footer::before {
-    background: linear-gradient(
-      90deg,
-      transparent,
-      var(--foreground),
-      transparent
-    );
+    background: linear-gradient(90deg,
+        transparent,
+        var(--foreground),
+        transparent);
   }
 }
 

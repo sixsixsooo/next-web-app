@@ -1,3 +1,8 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Bag | Web-app",
+};
 export default function Bag() {
   return (
     <div>

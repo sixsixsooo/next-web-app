@@ -8,14 +8,12 @@ export default function ProfileLayout({
   return (
     <div>
       {children}
-      <ul>
-        <li>
-          <Link href="/profile/avatar">Avatar</Link>
-        </li>
-        <li>
-          <Link href="/profile/name">Name</Link>
-        </li>
-      </ul>
+      <button>
+        <Link href="/profile/avatar">Avatar</Link>
+      </button>
+      <button>
+        <Link href="/profile/name">Name</Link>
+      </button>
     </div>
   );
 }
